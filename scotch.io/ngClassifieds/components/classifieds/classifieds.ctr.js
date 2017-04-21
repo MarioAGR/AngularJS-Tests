@@ -38,7 +38,6 @@
                 email: "dasdasda@mail.com"
             }
 
-
             function openSidebar() {
                 $state.go('classifieds.new');
             }
