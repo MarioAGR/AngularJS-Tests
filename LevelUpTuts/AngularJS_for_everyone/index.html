@@ -6,10 +6,13 @@
     <title>AngularJS For Everyone</title>
 </head>
 
-<body style="background: {{ yourName }}">
-	
-	<input type="text" ng-model="yourName" placeholder="Enter your name" />
-	<h1>{{ yourName }}</h1>
+<body ng-init="list = [{name: 'Mario', age: 22}, {name: 'Alberto', age: 21}, {name: 'Guillen', age: 20}, {name: 'Rivas', age: 19}]">
+
+	<ul>
+		<li ng-repeat="item in list">
+			{{ item.name }} - <em>{{ item.age }}</em>
+		</li>
+	</ul>
 
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
 </body>
