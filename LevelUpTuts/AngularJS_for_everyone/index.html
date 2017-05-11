@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en" ng-app>
+<html lang="en" ng-app="directoryApp">
 
 <head>
     <meta charset="UTF-8">
     <title>AngularJS For Everyone</title>
 </head>
 
-<body ng-init="list = [{name: 'Mario', age: 22}, {name: 'Alberto', age: 21}, {name: 'Guillen', age: 20}, {name: 'Rivas', age: 19}]">
+<body ng-controller="directoryController">
 	
 	<input type="text" ng-model="search">
 
@@ -17,6 +17,7 @@
 	</ul>
 
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+	<script type="text/javascript" src="js/directory.js"></script>
 </body>
 
 </html>
