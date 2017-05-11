@@ -13,5 +13,11 @@ angular
         }, {
             name: 'Rivas',
             age: 19
-        }]
+        }];
+
+        $scope.addPerson = function() {
+        	$scope.list.push({name: $scope.name, age: $scope.age});
+        	$scope.name = '';
+        	$scope.age = null;
+        };
     });
